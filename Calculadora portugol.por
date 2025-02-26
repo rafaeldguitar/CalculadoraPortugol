@@ -15,30 +15,33 @@ programa {
       divisao = n1 / n2 
 
 
-      escreva("Clique 1 para somar\n2 para subitrair\n3 para multiplicar\n4 para dividir\n")
+      escreva("\nEscolha um opção: \n")
+      escreva("\n1 para somar\n2 para subitrair\n3 para multiplicar\n4 para dividir\n")
       leia(opcao)
+
+      
 
       se (opcao == 1){
         resultado = soma
-        escreva("O resultado da soma é: ", resultado, "\n")
+        escreva("\nO resultado da soma é: ", resultado, "\n")
         } senao se (opcao == 2){
           resultado = subtracao
-          escreva("O resultado da subtração é: ", resultado, "\n")
+          escreva("\nO resultado da subtração é: ", resultado, "\n")
         } senao se (opcao == 3){
           resultado = multiplicacao
-          escreva("O resultado da multiplicação é: ", resultado, "\n")
+          escreva("\nO resultado da multiplicação é: ", resultado, "\n")
         } senao se (opcao == 4){
           se (n2 == 0) { 
-            escreva("Erro: Divisão por zero!\n")
+            escreva("\nErro: Divisão por zero!\n")
           } senao {
             resultado = divisao
-            escreva("O resultado da divisão é: ", resultado, "\n")
+            escreva("\nO resultado da divisão é: ", resultado, "\n")
           }
         } senao {
-          escreva("Opção inválida!\n")
+          escreva("\nOpção inválida!\n")
         }
 
-        escreva("Para nova operação digite 1, para parar digite 2\n")
+        escreva("\nPara nova operação digite 1, para parar digite 2\n")
         leia(continuar)
 
         se (continuar == 2){
